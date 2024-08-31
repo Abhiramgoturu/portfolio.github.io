@@ -1,0 +1,168 @@
+/*if you want to display elements side by side then use the property 
+display:flex. it will help to place the elements side by side*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Comodo', sans-serif; /*this fonts are taken from cdnfonts website*/  
+    margin:0px;/*space around the padding can be given using marign*/
+    padding: 0px;./*space arond the content can be provide by using padding*/
+    
+       
+                                      
+}
+
+body{
+     
+    background-color:#5B99C2 
+}
+
+.nav-bar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;/*this is used to place items in center of the page*/
+    background-color:teal  ;
+    padding: 15px 20px ;/*1st value(15px) is for top and bottom of the content
+    and 2nd value(20px) is for the right and left of the content*/
+    font-weight: 400
+    
+    
+}
+
+.logo img{/*img is descendent child of logo*/
+    width: 100px;
+    margin:10px 20px;
+}
+
+.search-box{
+    display: flex;
+    flex: 1;/*flex 1 means it will strech until it fits the position*/
+    margin: 0px 20px; 
+}
+
+.search-box input{/*input is descendent of search-box*/
+    display: flex;
+    flex:1;/*flex grow or flex :1 both are same*/ 
+    border: none;
+    border-radius: 5px/*top-left*/ 0px/*top-right*/ 0px/*bottom-right*/ 5px/*bottom-left position*/;
+    padding: 15px;
+}
+
+.search-box button{
+    padding: 5px 10px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: cadetblue;
+    color: white;
+    cursor:pointer;/*we use this to change the cursor while pointing to the box*/
+
+}  
+
+.search-box button:hover{
+    background-color:coral;
+}
+
+.nav-links a{/*a is descendent of nav-links*/
+    text-decoration: none;/*to remove the underlines that come in part of css structure*/
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.nav-icon a{
+    margin-left: 15px;
+}
+
+.nav-icon img{
+    width: 30px;
+}
+
+.nav-icon img:hover{
+    filter:sepia(100%);
+}
+
+.hero-section img{
+   width: 100%;
+   margin-top: 20px;
+   border-radius: 10px;
+}
+
+.hero-section{
+    margin-top: 0;
+}
+
+.hero-section img:hover{
+    cursor: pointer;
+}
+
+.nav-bar:hover{
+    background-color: darkmagenta;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column p, .footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column a img {
+    width: 24px;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
